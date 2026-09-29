@@ -6,7 +6,7 @@ const environment = process.env.APP_ENV || 'development';
 
 app.get('/', (req, res) => {
   res.json({
-    application: 'Secure Lab App',
+    application: 'Secure Lab App - specilialization Security lab',
     version: '1.0.0',
     environment
   });
@@ -18,7 +18,7 @@ app.get('/health', (req, res) => {
 
 app.get('/api/info', (req, res) => {
   res.status(200).json({
-    name: 'Secure Lab App - Especializacion Security Lab',
+    name: 'Secure Lab App',
     version: '1.1.0'
     environment: process.env.APP_ENV
   });
